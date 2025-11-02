@@ -9,11 +9,11 @@ public class Main {
         // return;
         // }
 
-        int numProducers = 10;// Integer.parseInt(args[0]);
-        int maxItemsPerProducer = 10;// Integer.parseInt(args[1]);
-        int producingTime = 2;// Integer.parseInt(args[2]);
-        int numConsumers = 100;// Integer.parseInt(args[3]);
-        int consumingTime = 1;// Integer.parseInt(args[4]);
+        int numProducers = Integer.parseInt(args[0]);
+        int maxItemsPerProducer = Integer.parseInt(args[1]);
+        int producingTime = Integer.parseInt(args[2]);
+        int numConsumers = Integer.parseInt(args[3]);
+        int consumingTime = Integer.parseInt(args[4]);
         Semaphore semaphoreBufferLimit = new Semaphore(100);
         Semaphore semaphoreCanConsume = new Semaphore(0);
 
